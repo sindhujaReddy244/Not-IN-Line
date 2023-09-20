@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Inter&family=Jost&family=Mulish&family=Rajdhani:wght@500&family=Roboto&family=Roboto+Mono:ital@1&family=Sriracha&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  margin: 0; /* Reset margin to default */
+  padding: 0;
+  background: linear-gradient(90deg, #75CFFF 22.19%, rgba(117, 207, 255, 0.00) 68.54%) no-repeat;
+  /* overflow: hidden; */
+}
+
+.inputform {
+  position: absolute;
+  top: 12%;
+  left: 10%; /* Adjust the left value */
+  width: 400px;
+  height: 361px;
+  border-radius: 34px;
+  background: #FFF;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.picture-container {
+  width: 280.418px;
+  height: 280.418px;
+  flex-shrink: 0;
+}
+
+.picture {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; /* Align to the right */
+  margin-top: 50px; /* Add a gap from the top */
+  margin-right: 50px; /* Add a gap from the right */
+}
+
+.rotated-picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.pricebar-container {
+  position: relative;
+  width: 100%;
+  height: 100px; 
+  /* display: flex; */
+  color: #FFF;
+  font-family: Inter;
+  font-size: 18px;
+  /* margin-top: 10%; */
+  margin-left: 5%;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.bar1 {
+  border-radius: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* display: inline-block; */
+  padding: 10px;
+  z-index: 2;  
+   /* To place it above bar2 */
+  background: #00486C;
+}
+
+.bar2 {
+  border-radius: 50px;
+  margin-left: 22%;
+  /* display: inline-block; */
+  position: absolute;
+  top: 0;
+  width: 10%;
+  left: 10;
+  background: #00A6FF;
+  padding: 5px;
+  margin-left: 380px;
+    z-index: 1; 
+  /* Lower z-index to place it behind bar1 */
+}
+
+.price-tag{
+  text-decoration: line-through; /* Add a line-through to indicate the old price */
+}
+.price-off{
+  margin-left: 20%;
+}
+.Accreditation {
+  display: flex;
+  justify-content: space-evenly; /* Space items equally along the main axis */
+  align-items: center; /* Align items vertically */
+}
+
+.accreditation-item {
+  display: flex;
+  align-items: center; 
+}
+.expanding {
+  text-align: center; /* Center the text */
+  font-size: 24px;
+  margin-top: 20px; /* Add a bit of spacing */
+  color: #333; /* Choose your desired text color */
+}
+.wekeep{
+  color: #333;
+font-family: Montserrat;
+font-size: 30px;
+font-style: normal;
+font-weight: 600;
+line-height: 70px; /* 145.833% */
+}
+.expand,.expand1{
+  color: #138ED1;
+font-family: Montserrat;
+font-size: 30px;
+font-style: normal;
+font-weight: 600;
+line-height: 70px;
+}
+.expand1{
+  margin-left: 50%;
+}
+svg{
+  stroke-width: 2px;
+stroke: #008DD9;
+width: 150px;
+height: 19px;
+flex-shrink: 0;
+margin-left: 40%;
+}
+.svg1{
+  width: 150px;
+  margin-left: 48%;
+}
+.svg2{
+  width: 150px;
+  margin-left: 48%;
+}
+.svg3{
+  margin-left: 65%;
+  
+}
+.mid-buttons {
+  text-align: center; 
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.mid-button {
+  padding:0px 45px;
+  margin: 0 10px;
+  background-color: #007BFF;
+  color: #FFF;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  width: 151px;
+  height: 80px;
+text-shadow: 0px 4px 50px #75CFFF;
+font-family: Montserrat;
+font-size: 17px;
+font-style: normal;
+border-radius: 18px;
+}
+.mid-button1{
+  border: none;
+  text-shadow: 0px 4px 50px #75CFFF;
+  font-family: Montserrat;
+  font-size: 17px;
+  font-style: normal;
+  width: 138px;
+  height: 80px;
+  flex-shrink: 0;
+  background-color: #007BFF;
+  color: #FFF;
+  border-radius: 18px;
+}
+.explore-text {
+  color: #6E6E6E;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px; /* 166.667% */
+  margin-top: 20px; /* Add spacing from the SVG */
+}
+/* Your existing styles */
+
+.mid-cards {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.mid-card {
+  width: 300px;
+  height: 30%;
+}
+
+.image-container {
+  position: absolute;
+  top: 10px; /* Adjust the top position for spacing */
+  right: 10px; /* Adjust the right position for spacing */
+  max-width: 30%; /* Adjust the size of the image as needed */
+}
+
+.mid-button {
+  margin-top: 10px;
+}
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  width: 10px 10px;
+}
+
+.card-row {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 0 10px;
+}
+.card {
+  background-color: #ffffff;
+  height: 230px;
+  padding: 10px 10px;
+  position: relative; 
+  /* border-radius: 0 60px 20px 0; */
+}
+
+.card-img-top {
+  width: 100%;
+  height: 120px; /* Adjust image height */
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.card-body {
+  padding: 12px ; /* Adjust padding */
+}
+
+.card-title {
+  font-size: 16px; /* Adjust font size */
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 14px;
+}
+.woman-container {
+  flex-shrink: 0;
+  width: 50%; /* Adjust width of woman container */
+  display: flex;
+  justify-content: flex-end; /* Align picture to the extreme right */
+  margin-left: 50%;
+  /* margin-top: -55%; */
+}
+
+.woman-container img {
+  width: 874px;
+  height: 707px;
+}
+.footer {
+  position:relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 10%;
+  padding: 20px 0; 
+  background-color: #343a40;
+  
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Add your existing CSS styles here */
+
+/* Adjust the styles for the rows and columns as needed */
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.phone-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.phone-input {
+  border: none;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.footer-logo {
+  width: 80px;
+  height: auto;
+}
+/* For mobile phones */
+@media (max-width: 768px) {
+  .inputform {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    border-radius: 34px;
+    background: #FFF;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .woman-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .woman-container img {
+    width: 500px;
+    height: 400px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 10%;
+    padding: 20px 0;
+    background-color: #343a40;
+  }
+
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Adjust the styles for the rows and columns as needed */
+  .footer-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .phone-icon {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+  }
+
+  .phone-input {
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    width: 100%;
+  }
+
+  .footer-logo {
+    width: 50px;
+    height: auto;
+  }
+
+  /* For tablets and desktops */
+} @media (min-width: 769px) and (max-width: 1024px) {
+  .inputform {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 361px;
+    border-radius: 34px;
+    background: #FFF;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .woman-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .woman-container img {
+    width: 874px;
+    height: 707px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 10%;
+    padding: 20px 0;
+    background-color: #343a40;
+  }
+
+}
+@media (max-width: 576px) {
+  .inputform {
+    width: 100%;
+    height: 200px;
+  }
+
+  .woman-container {
+    width: 100%;
+  }
+
+  .woman-container img {
+    width: 300px;
+    height: 250px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
